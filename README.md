@@ -40,6 +40,16 @@ git clone https://github.com/students_personal_github_account/microteaching.git
 
 It should prompt download the repo to your desktop. You can take this opportunity to look around and check that it did so.
 
+### 3b) Navigate to your repo
+
+You have cloned your repo, and if you check your desktop, you can see that your repo exists! But wait--if you look at your command line, you're still simply on your desktop and not in the folder you just created. To descend one level deeper into your computer's file structure, into the microteaching folder now on your desktop, type:
+
+```
+cd microteaching
+```
+
+_NB: for more information on Unix commands, see [here](http://mally.stanford.edu/~sr/computing/basic-unix.html)._
+
 ### 4) Checkout onto a new branch, set upstream branch
 
 To create a new working branch, type the following. A typical workflow involves working on a development branch and pushing major milestone changes to the main branch. "name_of_branch" can be whatever you want it to be.
