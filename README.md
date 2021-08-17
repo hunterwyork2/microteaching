@@ -61,7 +61,7 @@ git checkout -b name_of_branch
 Now you want to set the upstream repo. This is the original repo against which you want to compare yours. While you can go on working all day editing the repo on your github account, you may want to keep your repo updated with the original user's repo so as to receive any new developments. As we will soon see, this is also essential so that git knows where to submit a pull request once we have made our own changes to the repo that we want to share!
 
 ```
-git remote upstream add https://github.com/hunterwyork2/microteaching.git
+git remote add upstream https://github.com/hunterwyork2/microteaching.git
 ```
 
 
