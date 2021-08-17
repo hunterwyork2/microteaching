@@ -30,22 +30,28 @@ cd C:/Users/hyork/Desktop
 cd /Users/(username)/Desktop
 ```
 
-### 3) Clone the repo
+### 3) Clone the repo to your machine
 
-Type the following
+In the top right corner of your newly forked repo on your github account, find the "clone" button. Clicking it will populate a URL that you can copy and paste into the terminal to clone the repo. Your command will looks something like the following, populated with your github username.
 
-```git
-git clone https://github.com/hunterwyork/microteaching.git
+```
+git clone https://github.com/students_personal_github_account/microteaching.git
 ```
 
-It should prompt download the repo to your desktop. 
+It should prompt download the repo to your desktop. You can take this opportunity to look around and check that it did so.
 
-### 4) Checkout onto a new branch
+### 4) Checkout onto a new branch, set upstream branch
 
 To create a new working branch, type the following. A typical workflow involves working on a development branch and pushing major milestone changes to the main branch. "name_of_branch" can be whatever you want it to be.
 
 ```
 git checkout -b name_of_branch
+```
+
+Now you want to set the upstream repo. This is the original repo against which you want to compare yours. While you can go on working all day editing the repo on your github account, you may want to keep your repo updated with the original user's repo so as to receive any new developments. As we will soon see, this is also essential so that git knows where to submit a pull request once we have made our own changes to the repo that we want to share!
+
+```
+git remote upstream add https://github.com/hunterwyork2/microteaching.git
 ```
 
 
@@ -69,13 +75,13 @@ git commit -m "updated feedback file"
 
 ### 6) Push your changes
 
-Finally, to push your changes to your main repo, type the following. If all goes well, you will be prompted to initiate a pull request.
+Finally, to push your changes to your main remote (github.com) repo, type the following. 
 
 ```
 git push -u origin name_of_branch
 ```
 
-This should return a message like the following:
+This should return a message like the following (here, my branch is named "hunter."):
 
 ```
 
@@ -99,4 +105,4 @@ Branch 'hunter' set up to track remote branch 'hunter' from 'origin'.
 
 ### 7) Create a pull request
 
-By navigating to the above URL, you can follow the onscreen prompts to create a pull request!
+By navigating to the above URL, you can follow the onscreen prompts to create a pull request! If a URL prompt does not appear, go to your repo online, and it should be there.
